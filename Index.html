@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddnxtdoor</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Hilary Edd Rakotama</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Showcase Section -->
+    <section class="showcase">
+        <div class="content">
+            <div class="typing-container">
+                <h1>Hilary Edd Rakotama</h1>
+            </div>
+            <h4>Welcome to my corner of the web.</h4>
+            <a href="#about" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+   <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="https://i.postimg.cc/RFfdw0kg/20241104-115347.jpg" alt="Hilary Edd Rakotama" class="about-image">
+        <div class="about-text">
+            <p>
+               I was born in Kimberly, South Africa, a place that, while not known for its technology, played a role in shaping who I am today. My love for innovation and technology was sparked by two key influences. Growing up, I was captivated by the TV show MacGyver, where the protagonist's ability to create ingenious solutions with limited resources inspired my curiosity about problem-solving and the potential of technology. My father also played a significant role in fostering my interest, as he often encouraged me to explore how things work and taught me the importance of creativity in understanding technology.
+            </p>
+            <p>
+               With a solid understanding of HTML and some experience in CSS, I’m eager to continue my journey in web development. I look forward to learning JavaScript and Python to create more dynamic, interactive projects that blend creativity with functionality. These skills will enable me to bring my ideas to life in exciting new ways.
+            </p>
+            <p>
+                Driven by the thrill of turning ideas into reality, I aspire to use my skills to develop applications that make a meaningful impact. I’m committed to growing as a developer and exploring the endless possibilities technology offers to improve lives and solve real-world problems.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="https://i.postimg.cc/Pf1RcfMM/Screenshot-2024-12-05-152233.png" alt="Project 1">
+            </div>
+            <div class="card-content">
+                <h3>Skills car dashboard</h3>
+                <p>This is a skills chart that I deseigned to look like a car dashboard</p>
+                <a href="https://codepen.io/Hi_Edd/pen/GgKomzB" class="btn">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="https://i.postimg.cc/mkQtXJqZ/Screenshot-2024-12-05-162603.png" alt="Project 2">
+            </div>
+            <div class="card-content">
+                <h3>Family Album</h3>
+                <p>This project is for my family to have memories of past, such as baby photos. It is still a work in process</p>
+                <a href="https://codepen.io/Hi_Edd/pen/wBwMrEQ" class="btn">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <div class="card-image">
+                <img src="https://i.postimg.cc/X7zscnX3/Screenshot-2024-12-05-165453.png" alt="Project 3">
+            </div>
+            <div class="card-content">
+                <h3>Grocery List</h3>
+                <p>This is a project my group and I are still worrking on. We haven't done the necessary changes to give it viewing capibalities at the moment.</p>
+              <a href="#" class="btn">View Project coming soon</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p>
+        I’m currently expanding my knowledge at Vistula University. This chart will be updated every 45 days. <br>
+        <strong>Last update: 02/12/24</strong>
+    </p>
+    <div class="skills-container">
+        <div class="circle-skill">
+            <div class="outer-circle" style="--percentage: 80;">
+                <div class="inner-circle">
+                    <span>HTML</span>
+                    <strong>80%</strong>
+                </div>
+            </div>
+        </div>
+        <div class="circle-skill">
+            <div class="outer-circle" style="--percentage: 65;">
+                <div class="inner-circle">
+                    <span>CSS</span>
+                    <strong>65%</strong>
+                </div>
+            </div>
+        </div>
+        <div class="circle-skill">
+            <div class="outer-circle" style="--percentage: 55;">
+                <div class="inner-circle">
+                    <span>C#</span>
+                    <strong>55%</strong>
+                </div>
+            </div>
+        </div>
+        <div class="circle-skill">
+            <div class="outer-circle" style="--percentage: 45;">
+                <div class="inner-circle">
+                    <span>JavaScript</span>
+                    <strong>45%</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Divider for Separation -->
+<hr class="section-divider">
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or just want to get in touch, feel free to send me a message!</p>
+    
+    <!-- Contact Form Container -->
+    <div class="contact-form-container">
+        <form class="contact-form" action="send_email.php" method="POST">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="input-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+    <!-- Footer -->
+  <footer class="footer">
+     <p class="social-text">Follow my social pages:</p>
+    <div class="socials">
+        <a href="https://codepen.io/Hi_Edd" target="_blank">Codepen</a>
+        <a href="https://www.linkedin.com/in/hilary-rakotama-a96997258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+        <a href="https://www.facebook.com/share/15azdw4WdV/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/eddnxtdoor?igsh=dmlxZmh6dW12eDRw" target="_blank">Instagram</a>
+    </div>
+    <p class="ending-message">"Thanks for scrolling this far—you're either really interested or really bored. Either way, I'm glad you're here!"</p>
+</footer>
+</body>
+</html>

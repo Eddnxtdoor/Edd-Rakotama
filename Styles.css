@@ -1,0 +1,493 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #457363;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #457363;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Showcase Section */
+.showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #457363;
+    padding: 0 20px;
+}
+
+.content {
+    z-index: 2;
+}
+
+.typing-container {
+    font-size: 36px;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    width: 31ch; 
+    animation: typing 5s steps(31, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 31ch; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #333; }
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 5px;
+    border: solid #fff 1px;
+    margin-top: 25px;
+    opacity: 0.7;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+    opacity: 1;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px; /* Larger size for emphasis */
+    margin-bottom: 30px;
+    color: #00bcd4;
+    font-weight: 700; /* Bold for more impact */
+    text-transform: uppercase; /* Makes the text all caps */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 18px; /* Increased size */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 40px; /* Larger size for emphasis */
+    margin-bottom: 30px;
+    color: #00bcd4;
+    font-weight: 700; /* Bold for more impact */
+    text-transform: uppercase; /* Makes the text all caps */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #00bcd4;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #457363;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00bcd4;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card-content .btn:hover {
+    background-color: #007ba7;
+}
+
+/* Skills Section */
+/* General Styles for Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+.skills h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #457363;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.skills p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.circle-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect: Scale on hover */
+.circle-skill:hover {
+    transform: scale(1.1);
+}
+
+.outer-circle {
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(
+        #00bcd4 calc(var(--percentage) * 1%), 
+        #e0e0e0 calc(var(--percentage) * 1%)
+    );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: rotate-circle 1.5s ease-in-out;
+}
+
+/* Spin animation */
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inner-circle {
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect: Change inner background color */
+.circle-skill:hover .inner-circle {
+    background-color: #f0f9fa;
+}
+
+.inner-circle span {
+    font-size: 16px;
+    color: #555;
+}
+
+.inner-circle strong {
+    font-size: 20px;
+    color: #457363;
+    margin-top: 5px;
+}
+
+/* Glow Effect on Hover */
+.circle-skill:hover .outer-circle {
+    box-shadow: 0 0 15px 5px rgba(0, 188, 212, 0.6);
+}
+
+/* Divider between Sections */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 50px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff; /* Different background for contact section */
+    color: #333;
+    padding-top: 80px; /* Add extra padding on top */
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #457363;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #457363;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #457363;
+    background-color: #fff;
+}
+
+.input-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #457363;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #365d49;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1d1d1d; /* Dark background for a modern look */
+    color: #fff; /* White text for contrast */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Clean, modern font */
+}
+
+/* Text above the social media links */
+.footer .social-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Social media links */
+.footer .socials {
+    margin-bottom: 15px;
+}
+
+.footer .socials a {
+    margin: 0 15px;
+    color: #00bcd4; /* Accent color */
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for social links */
+.footer .socials a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+/* Ending message */
+.footer .ending-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa; /* Lighter color for the message */
+    font-style: italic;
+}
